@@ -20,7 +20,6 @@
         <h1>RentACar</h1> 
       </div> 
      </section>
-      
         <nav class="navbar" >
          <a href="agenceRentacar.html"> Acceuil</a>
          <a href="Nos-offres.html">Nos véhicules</a>
@@ -30,10 +29,12 @@
         
    </header> 
         <img src="photo/voituresummer.jpg" id="img3">
-        <section class="réservationform" >
-          <p id= "Réserver1"> Réserver votre  location voiture en Tunisie </p>
-        <div class="containerform">   
-          <form action="/action_page.php">
+
+            <section class="réservationform" >
+
+            <div id= "Réserver1"> Réserver votre  location voiture en Tunisie </div>
+          <form>
+            <label for="cars"> Quel type de voiture voulez-vous ? </label> <br>
             <select id="cars" name="cars" >
               <option value="type de véhicules"> Type de véhicules</option>
               <option value="Polo"> Polo </option>
@@ -41,7 +42,7 @@
               <option value="Renault"> Renault</option>
               <option value="Fiat">Fiat</option>
             </select> <br>
-            <label for="lieu">Lieu de :</label> <br>
+            <label for="lieu">Lieu de départ :</label> <br>
             <select id="lieu" name="lieu" width="30px">
               <option value="Aéroport tunis carthage">Aéroport tunis carthage</option>
               <option value="Tunis">Tunis</option>
@@ -50,7 +51,7 @@
               <option value="Aéroport-enfitha">Aéroport-enfitha</option>
             </select> <br>
 
-            <label for="lieu">Lieu de remise:</label> <br>
+            <label for="lieu"> Lieu de remise:</label> <br>
       
             <select id="lieu" name="lieu" width="30px">
                 <option value="Aéroport tunis carthage">Aéroport tunis carthage</option>
@@ -59,17 +60,17 @@
                 <option value="Nabeul">Nabeul</option>
                 <option value="Aéroport-enfitha">Aéroport-enfitha</option>
               </select> <br>
+
             <label for="date"> Prise le:</label>
-            <input type="date" id="date" name="date" pattern="[0-9]{2}/[0-9]"  placeholder="10/10/2020" pattern="(?:29|30))|(?:(?:0[13578]|1[02])-31)-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))|(?:[0-9]{2}-(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:19|20)(?:(?:[13579][26]|[02468][048])" class="form-control " name="date"  required autofocus autocomplete="nope">
-            <label for="date"> Remise le:</label> 
-            <input type="date" id="date" name="date" pattern="[0-9]{2}/[0-9]"  placeholder="10/10/2020" pattern="(?:29|30))|(?:(?:0[13578]|1[02])-31)-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))|(?:[0-9]{2}-(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:19|20)(?:(?:[13579][26]|[02468][048])" class="form-control " name="date" required autofocus autocomplete="nope">
+            <input type="date"  name="date" pattern="[0-9]{2}/[0-9]{2}/[0-9]{2}">
+            <label for="date"> Remise le:</label>
+            <input type="date"  name="date" pattern="[0-9]{2}/[0-9]{2}/[0-9]{2}">
             <br> <br> 
             <input type="submit" value="Réservation" class="Réservation" href="réservation.html">
           </form>
-          </div>
         
         </section>
-      
+
       <section class="section2">
         <h3> Nous sommes plus qu'un loueur de voitures... </h3>
 <hr>
@@ -115,7 +116,7 @@
 </div> 
 
 <div class="voir" >
-  <input type="submit" value="Voir plus" href="Nos-offres.html" > 
+  <input type="submit" value="Voir plus" href="Nos-véhicules.html" > 
 </div>
 
     <section class="section3">
